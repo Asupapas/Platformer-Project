@@ -12,6 +12,8 @@ public class PlatformerMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    [SerializeField]
+    float jumpcharge = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,13 +31,14 @@ public class PlatformerMovement : MonoBehaviour
         rb.velocity = velocity;
         if (Input.GetButtonDown("Jump") && grounded)
         {
-            rb.AddForce(new Vector2(0, 100 * jumpSpeed));
-            animator.SetTrigger("Jump");
+         rb.AddForce(new Vector2(0, 100 * jumpSpeed));
+         animator.SetTrigger("Jump");
         }
         if(rb.velocity.y < -0.1f && !grounded)
         {
             animator.SetTrigger("Fall");
         }
+        
         animator.SetFloat("xInput", moveX);
         animator.SetBool("grounded", grounded);
         if(moveX < 0)
@@ -54,6 +57,7 @@ public class PlatformerMovement : MonoBehaviour
         if(collision.gameObject.tag == "Ground")
         {
             grounded = true;
+            jumpcharge = 2;
         }
         if(collision.gameObject.tag == "Enemy")
         {
