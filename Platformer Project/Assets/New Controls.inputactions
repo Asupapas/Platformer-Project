@@ -6,37 +6,9 @@
             "id": "900755d0-95ae-43c1-9a37-faddb43fa43f",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "1d8bde4f-c629-4177-a9e1-2e61cd0ef4ed",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "268218ea-8511-4cfd-9ad3-46c777bda57b",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "PauseMenu",
-            "id": "aaeb733c-7878-4f08-b58f-d3fe8dbb75e9",
-            "actions": [
-                {
                     "name": "Movement",
                     "type": "Value",
-                    "id": "a45e0aea-6e91-41bb-8b67-f11bde3f928c",
+                    "id": "5eed4591-b432-47fd-ac45-70962872f851",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -45,7 +17,7 @@
                 {
                     "name": "PointerPosition",
                     "type": "Value",
-                    "id": "324e16b0-7c40-4500-a36f-c86247546988",
+                    "id": "5f6fb335-12a4-4f1d-9d19-cf96419f9f4d",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -54,7 +26,7 @@
                 {
                     "name": "Attack",
                     "type": "Button",
-                    "id": "0acf317a-29bc-4b85-82c5-fcc54fe43333",
+                    "id": "ff780c9c-cc34-4790-a6f3-f886b3a8b838",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -63,30 +35,8 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "b012639b-801b-4d14-a7e5-b59307dbeda6",
-                    "path": "<Mouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PointerPosition",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "42b8c8e9-65a3-4043-b6f8-cd1c6fc830b4",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "WASD",
-                    "id": "effb8b5f-74db-40fd-bfd5-4536e9e58726",
+                    "id": "564aa48f-88d0-4393-bb06-7ca8acc25e1e",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -97,7 +47,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "fec7643b-442d-4dbf-ae06-4b2fcddfa766",
+                    "id": "472b0288-85b2-455e-a42a-2a62bdfc88d9",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -108,7 +58,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "be685e16-360f-413d-8267-c84da5be4043",
+                    "id": "6dd1dded-c13e-4c5b-9679-30cd2b370f8b",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -119,7 +69,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "c3eaf3a6-d578-47ce-bb32-132b3e29ea83",
+                    "id": "0d6476af-a4e5-4137-af2e-132c2dc035b9",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -130,7 +80,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "cac10837-a92b-4188-a903-3d8f614d672d",
+                    "id": "b21854fa-d969-4df8-ab29-bee287794dea",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -138,8 +88,36 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "4b4af136-6af9-410a-8cc3-37239108877e",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PointerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4d9dd4c-9e8a-436c-b945-df1a214350c0",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "PauseMenu",
+            "id": "aaeb733c-7878-4f08-b58f-d3fe8dbb75e9",
+            "actions": [],
+            "bindings": []
         }
     ],
     "controlSchemes": []
