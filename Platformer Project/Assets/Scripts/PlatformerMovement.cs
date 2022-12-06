@@ -12,8 +12,6 @@ public class PlatformerMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
-    [SerializeField]
-    float jumpcharge = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,7 +55,6 @@ public class PlatformerMovement : MonoBehaviour
         if(collision.gameObject.tag == "Ground")
         {
             grounded = true;
-            jumpcharge = 2;
         }
         if(collision.gameObject.tag == "Enemy")
         {
