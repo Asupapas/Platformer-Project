@@ -20,12 +20,4 @@ public class EnemyHealth : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Die();
-    }
-    public void Die()
-    {
-        Destroy(gameObject);
-    }
 }
