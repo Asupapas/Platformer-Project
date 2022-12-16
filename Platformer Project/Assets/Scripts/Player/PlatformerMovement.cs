@@ -27,10 +27,14 @@ public class PlatformerMovement : MonoBehaviour
         Vector2 velocity = rb.velocity;
         velocity.x = moveX * moveSpeed;
         rb.velocity = velocity;
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (Time.timeScale >= 1)
         {
-         rb.AddForce(new Vector2(0, 100 * jumpSpeed));
-         animator.SetTrigger("Jump");
+            if (Input.GetButtonDown("Jump") && grounded)
+            {
+
+                rb.AddForce(new Vector2(0, 100 * jumpSpeed));
+                animator.SetTrigger("Jump");
+            }
         }
         if(rb.velocity.y < -0.1f && !grounded)
         {
